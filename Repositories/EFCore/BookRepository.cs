@@ -2,6 +2,7 @@
 using Entities.RequestFeatures;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
+using Repositories.EFCore.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +27,10 @@ namespace Repositories.EFCore
         public async Task<PagedList<Book>> GetAllBooksAsync(BookParameters bookParameters, bool trackChanges)
         {
             var books = await FindAll(trackChanges)
-                .FilterBooks(bookParameters.MaxPrice, bookParameters.MaxPrice) //Bu metot bizim genişletme metotumuzdur. (kendimiz IQueryable'a yazdık) - Bu meteot da EFCore > BookRepositoryExtensions.cs' de yazmakta.
+                .FilterBooks( //minPrice: maxPrice: yazarak onun yerini garantiledik.
+                minPrice: bookParameters.MinPrice, 
+                maxPrice: bookParameters.MaxPrice) //Bu metot bizim genişletme metotumuzdur. (kendimiz IQueryable'a yazdık) - Bu meteot da EFCore > BookRepositoryExtensions.cs' de yazmakta.
+                .Search(bookParameters.SearchTerm) //Bu arama metotumuz.
                 .OrderBy(b => b.Id)
                 .ToListAsync();
             //.Skip((bookParameters.PageNumber - 1) * bookParameters.PageSize) //Sayfalama mantığı burada. 

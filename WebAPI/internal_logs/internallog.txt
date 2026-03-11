@@ -133,3 +133,26 @@
 2026-03-11 14:09:00.5659 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2026-03-11 14:09:00.5814 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
 2026-03-11 14:09:00.6028 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Berke\Desktop\c#_Kursu\ASP.NET_CORE_WEB_API\bsStoreApp\WebAPI\nlog.config
+2026-03-11 15:54:31.0679 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-11 15:54:31.0811 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-03-11 15:54:31.1028 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Berke\Desktop\c#_Kursu\ASP.NET_CORE_WEB_API\bsStoreApp\WebAPI\nlog.config
+2026-03-11 15:58:42.8819 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-11 15:58:42.8927 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-03-11 15:58:42.9097 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Berke\Desktop\c#_Kursu\ASP.NET_CORE_WEB_API\bsStoreApp\WebAPI\nlog.config
+2026-03-11 15:58:43.4378 Info AppDomain Shutting down. LogFactory closing...
+2026-03-11 15:58:43.4480 Info LogFactory has been disposed.
+2026-03-11 15:59:00.3281 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-11 15:59:00.3427 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-03-11 15:59:00.3675 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Berke\Desktop\c#_Kursu\ASP.NET_CORE_WEB_API\bsStoreApp\WebAPI\nlog.config
+2026-03-11 15:59:47.5738 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-11 15:59:47.5871 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-03-11 15:59:47.6084 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Berke\Desktop\c#_Kursu\ASP.NET_CORE_WEB_API\bsStoreApp\WebAPI\nlog.config
+2026-03-11 16:07:36.3725 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-11 16:07:36.3725 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-03-11 16:07:36.3985 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Berke\Desktop\c#_Kursu\ASP.NET_CORE_WEB_API\bsStoreApp\WebAPI\nlog.config
+2026-03-11 16:08:41.3074 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-11 16:08:41.3204 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-03-11 16:08:41.3405 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Berke\Desktop\c#_Kursu\ASP.NET_CORE_WEB_API\bsStoreApp\WebAPI\nlog.config
+2026-03-11 16:11:45.6182 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-11 16:11:45.6296 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-03-11 16:11:45.6455 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Berke\Desktop\c#_Kursu\ASP.NET_CORE_WEB_API\bsStoreApp\WebAPI\nlog.config
