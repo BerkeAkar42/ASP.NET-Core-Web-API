@@ -1,0 +1,28 @@
+﻿using Repositories.Contracts;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Repositories.EFCore
+{
+    public class RepositoryManager : IRepositoryManager
+    {
+        private readonly RepositoryContext _context;
+        private readonly Lazy<IBookRepository> _bookRepository;
+
+        public RepositoryManager(RepositoryContext context)
+        {
+            _context = context;
+            _bookRepository = new Lazy<IBookRepository>(() => new BookRepository(_context)); // Lazy: "Tembel Yükleme" (Lazy Loading) 
+        }
+
+        public IBookRepository Book => _bookRepository.Value; //Bu ne zaman çağırılırsa, Lazy sayesinde çağırdığımız anca örneklenecek. Diğer türlü bellekte direk oluşup bekleyecekti.
+
+        //public IBookRepository Book => new BookRepository(_context);
+
+        public async Task SaveAsync() => await _context.SaveChangesAsync();
+
+    }
+}
