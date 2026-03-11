@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Repositories.EFCore
 {
-    public class BookRepository : RepositoryBase<Book>, IBookRepository
+    public sealed class BookRepository : RepositoryBase<Book>, IBookRepository
     {
         public BookRepository(RepositoryContext context) : base(context)
         {
@@ -26,8 +26,9 @@ namespace Repositories.EFCore
         public async Task<PagedList<Book>> GetAllBooksAsync(BookParameters bookParameters, bool trackChanges)
         {
             var books = await FindAll(trackChanges)
-            .OrderBy(b => b.Id)
-            .ToListAsync();
+                .FilterBooks(bookParameters.MaxPrice, bookParameters.MaxPrice) //Bu metot bizim genişletme metotumuzdur. (kendimiz IQueryable'a yazdık) - Bu meteot da EFCore > BookRepositoryExtensions.cs' de yazmakta.
+                .OrderBy(b => b.Id)
+                .ToListAsync();
             //.Skip((bookParameters.PageNumber - 1) * bookParameters.PageSize) //Sayfalama mantığı burada. 
             //.Take(bookParameters.PageSize) //Belirlediğimiz PageSize kadar veriyi al diyoruz.
 

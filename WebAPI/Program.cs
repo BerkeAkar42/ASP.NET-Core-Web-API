@@ -65,7 +65,7 @@ namespace WebAPI
                 app.MapOpenApi();
             }
 
-
+            
             if (app.Environment.IsProduction())
             {
                 app.UseHsts();
