@@ -156,3 +156,12 @@
 2026-03-11 16:11:45.6182 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2026-03-11 16:11:45.6296 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
 2026-03-11 16:11:45.6455 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Berke\Desktop\c#_Kursu\ASP.NET_CORE_WEB_API\bsStoreApp\WebAPI\nlog.config
+2026-03-12 12:57:47.9474 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-12 12:57:47.9587 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-03-12 12:57:47.9587 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Berke\Desktop\c#_Kursu\ASP.NET_CORE_WEB_API\bsStoreApp\WebAPI\nlog.config
+2026-03-12 12:57:55.6121 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-12 12:57:55.6224 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-03-12 12:57:55.6224 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Berke\Desktop\c#_Kursu\ASP.NET_CORE_WEB_API\bsStoreApp\WebAPI\nlog.config
+2026-03-12 13:53:53.2689 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-03-12 13:53:53.2794 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.0.4914. Product version: 6.1.0+5b1846554f5a8f98878ca64cce5a485ca3b8275c. GlobalAssemblyCache: False
+2026-03-12 13:53:53.2936 Info Configuration initialized: TargetNames=logfile, ConfigItems=12, AutoReload=true, FilePath=C:\Users\Berke\Desktop\c#_Kursu\ASP.NET_CORE_WEB_API\bsStoreApp\WebAPI\nlog.config

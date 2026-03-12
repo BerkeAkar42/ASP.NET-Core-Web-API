@@ -28,10 +28,10 @@ namespace Repositories.EFCore
         {
             var books = await FindAll(trackChanges)
                 .FilterBooks( //minPrice: maxPrice: yazarak onun yerini garantiledik.
-                minPrice: bookParameters.MinPrice, 
+                minPrice: bookParameters.MinPrice,
                 maxPrice: bookParameters.MaxPrice) //Bu metot bizim genişletme metotumuzdur. (kendimiz IQueryable'a yazdık) - Bu meteot da EFCore > BookRepositoryExtensions.cs' de yazmakta.
                 .Search(bookParameters.SearchTerm) //Bu arama metotumuz.
-                .OrderBy(b => b.Id)
+                .Sort(bookParameters.OrderBy) //Kendi yazdığımız extension metotumuz ile OrderBy sıralaması yaptık.
                 .ToListAsync();
             //.Skip((bookParameters.PageNumber - 1) * bookParameters.PageSize) //Sayfalama mantığı burada. 
             //.Take(bookParameters.PageSize) //Belirlediğimiz PageSize kadar veriyi al diyoruz.

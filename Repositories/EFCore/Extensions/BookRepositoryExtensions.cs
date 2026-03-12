@@ -3,8 +3,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq.Dynamic.Core;
 
 namespace Repositories.EFCore.Extensions
 {
@@ -34,5 +36,20 @@ namespace Repositories.EFCore.Extensions
                 .ToLower() //başlığı küçük yap
                 .Contains(searchTerm)); //İstenilen kelime başlık içeriyor mu diye bak.
         }
+
+
+        public static IQueryable<Book> Sort(this IQueryable<Book> books, string orderByQueryString)
+        {
+            if (string.IsNullOrWhiteSpace(orderByQueryString))
+                return books.OrderBy(b => b.Id); //Eğer kullanıcı hiçbir sıralama belirtmediyse default olarak id ye göre sırala.
+
+            var orderQuery = OrderQueryBuilder.CreateOrderQuery<Book>(orderByQueryString);
+
+            if (orderQuery is null) //Eğer kullanıcının girdiği sıralama terimleri yoksa default olarak id ye göre sırala.
+                return books.OrderBy(b => b.Id);
+
+            return books.OrderBy(orderQuery);
+        }
+
     }
 }

@@ -11,5 +11,13 @@
 
         //Arama (Searching) işmemleri için gerekli propertyler
         public string? SearchTerm { get; set; }
+
+
+        //Sıralama (Sorting) işmemleri için gerekli propertyler
+        public BookParameters()
+        {
+            OrderBy = "id"; //Linq sorgusuna API'den null değer dönmesin diye başlangıç olarak id verdik.
+        }
+
     }
 }
